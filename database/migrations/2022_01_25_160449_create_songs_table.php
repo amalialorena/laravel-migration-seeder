@@ -25,6 +25,7 @@ class CreateSongsTable extends Migration
             $table->date('release_date');
             $table->integer('price');
             $table->tinyInteger('ratings');
+            $table->timestamps();
         });
     }
 

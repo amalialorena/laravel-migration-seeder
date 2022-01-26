@@ -21,6 +21,7 @@ class CreateAlbumsTable extends Migration
             $table->date('release_date');
             $table->string('cover')->nullable;
             $table->string('label');
+            $table->timestamps();
         });
     }
 
