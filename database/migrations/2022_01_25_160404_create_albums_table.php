@@ -16,10 +16,11 @@ class CreateAlbumsTable extends Migration
         Schema::create('albums', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('songs');
+            $table->bigInteger('views')->unsigned()->default(0);
+            $table->bigInteger('sells')->unsigned()->default(0);
             $table->date('release_date');
             $table->string('cover')->nullable;
-            $table->bigInteger('artist_id');
+            $table->string('label');
         });
     }
 
