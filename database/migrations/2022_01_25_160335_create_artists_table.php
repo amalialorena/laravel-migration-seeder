@@ -21,7 +21,7 @@ class CreateArtistsTable extends Migration
             $table->date('birth_date');
             $table->text('awards');
             $table->text('bio');
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 
